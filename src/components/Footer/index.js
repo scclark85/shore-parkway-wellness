@@ -4,7 +4,7 @@ import "./style.css"
 
 const Footer = () => {
     return (
-        <MDBFooter className="font-small pt-4 mt-4">
+        <MDBFooter className="font-small">
             <MDBContainer fluid className=" footer-top text-center text-md-left">
                 <div className="container">
                     <br />
@@ -28,7 +28,7 @@ const Footer = () => {
 
                                 <li className="list-unstyled">
                                     <span class="map-link">
-                                        <b>A:  6555 Hollywood Blvd, Hollywood, CA 90028</b>
+                                        <b>A:  1736 Shore Pkwy, Brooklyn, NY 11214</b>
                                     </span>
                                 </li>
 

@@ -97,9 +97,6 @@ class Nav extends Component {
                         </div>
                     </div>
                 </div>
-
-                <br />
-
             </div>
         )
     }

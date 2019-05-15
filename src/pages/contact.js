@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Map from "../components/Map";
 import "./style.css"
 
 class Contact extends Component {
@@ -7,6 +8,8 @@ class Contact extends Component {
         return (
             <div>
                 Contact Page
+
+                <Map />
             </div>
         )
     }
