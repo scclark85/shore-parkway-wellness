@@ -1,0 +1,57 @@
+/* top white nav */
+.navbar-logo{
+    height: 70px;
+    width: 560px;
+}
+
+#navbar-1{
+    padding-top: 10px;
+}
+
+.navbar-btn{
+    /* color: #2F2F2F !important; */
+    font-size: 20px;
+}
+
+.navbar-hours{
+    padding-left: 15px;
+    font-size: 15px;
+}
+
+.navbar-street{
+    padding-left: 33px;
+    font-size: 15px;
+}
+
+.navbar-city{
+    padding-left: 20px;
+    font-size: 15px;
+}
+
+/* middle opacity nav */
+#navbar-2{
+    opacity: .4;
+    background-color: #4D1818; 
+    padding-top: 10px;
+    padding-bottom: 10px; 
+}
+
+.navbar-phone{
+    color: white !important;
+    font-size: 26px;
+}
+
+/* bottom full color nav */
+#navbar-3{
+    background-color: #4D1818; 
+    padding-top: 10px;
+    padding-bottom: 10px; 
+}
+
+.nav-link{
+    color: white !important;
+}
+
+ul{
+    padding-left: 0px !important;
+}
