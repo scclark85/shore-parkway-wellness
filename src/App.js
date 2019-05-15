@@ -9,6 +9,7 @@ import Contact from "./pages/contact";
 
 import Nav from "./components/Nav";
 import Footer from "./components/Footer"
+import Map from "./components/Map"
 
 class App extends Component {
   render() {
@@ -23,6 +24,7 @@ class App extends Component {
           <Route exact path="/staff" component={Staff} />
           <Route exact path="/contact" component={Contact} />
         </Switch>
+        <Map />
         <Footer />
       </Router>
     );
