@@ -23,7 +23,7 @@ class Home extends Component {
                         <b><div style={{
                             textAlign: "center",
                         }}>
-                            Shore Parkway Wellness
+                            Your Testosterone and Hormone Replacement Specialists
                         </div></b>
                     </h1>
                     <br />
@@ -31,7 +31,7 @@ class Home extends Component {
                     <b><div style={{
                         textAlign: "center",
                     }}>
-                        <p>Your Testosterone and Hormone Replacement Specialists</p>
+                        <p></p>
                     </div>
                     </b>
                 </div>

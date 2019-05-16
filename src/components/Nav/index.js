@@ -67,6 +67,12 @@ class Nav extends Component {
                         <div className="container">
 
                             <ul className="navbar-nav mr-auto">
+                            <li className="navbar-item">
+                                    <Link to="/home" className="nav-link">
+                                        <b>HOME</b>
+                                    </Link>
+                                </li>
+
                                 <li className="navbar-item">
                                     <Link to="/services" className="nav-link">
                                         <b>SERVICES</b>
