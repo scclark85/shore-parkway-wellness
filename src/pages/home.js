@@ -19,21 +19,46 @@ class Home extends Component {
                 >
                     <br />
 
-                    <h1>
-                        <b><div style={{
-                            textAlign: "center",
+                    <div className="container"
+                        style={{
+                            textAlign: "",
+                            fontFamily: 'Mitr, sans-serif',
+                            fontSize: "50px"
                         }}>
-                            Your Testosterone and Hormone Replacement Specialists
-                        </div></b>
-                    </h1>
+                        <table style={{ height: "720px" }}>
+                            <tbody>
+                                <tr>
+                                    <td className="align-middle">
+                                        <b>YOUR TESTOSTERONE AND HORMONE REPLACEMENT SPECIALISTS</b>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <br />
+                </div>
+
+                <div className="jumbotron"
+                    style={{
+                        background: "white",
+                    }}
+                >
                     <br />
 
-                    <b><div style={{
-                        textAlign: "center",
-                    }}>
-                        <p></p>
+                    <div className="container"
+                        style={{
+                            textAlign: "center",
+                            fontFamily: 'Mitr, sans-serif',
+                        }}>
+                        <b>WHAT ARE THE BENEFITS?</b>
+                        <br />
+                        <br />
+
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                     </div>
-                    </b>
+                    <br />
                 </div>
 
                 <Map />

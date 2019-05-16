@@ -16,19 +16,19 @@ const Footer = () => {
                             <ul>
                                 <li className="list-unstyled">
                                     <a href="tel:+718-372-1031">
-                                        <b> P:  718.372.1031</b>
+                                        <b>P: 718.372.1031</b>
                                     </a>
                                 </li>
 
                                 <li className="list-unstyled">
                                     <a href="mailto:shoreparkwaywellness@gmail.com">
-                                        <b>E:  shoreparkwaywellness@gmail.com</b>
+                                        <b>E: shoreparkwaywellness@gmail.com</b>
                                     </a>
                                 </li>
 
                                 <li className="list-unstyled">
                                     <span class="map-link">
-                                        <b>A:  1736 Shore Pkwy, Brooklyn, NY 11214</b>
+                                        <b>A: 1736 Shore Pkwy, Brooklyn, NY 11214</b>
                                     </span>
                                 </li>
 

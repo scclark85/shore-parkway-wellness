@@ -40,7 +40,7 @@ class Nav extends Component {
                                     1736 Shore Pkwy
                             </h6>
 
-                            <h6 className="navbar-city">
+                                <h6 className="navbar-city">
                                     Brooklyn, NY 11214
                             </h6>
                             </div>
@@ -67,35 +67,35 @@ class Nav extends Component {
                         <div className="container">
 
                             <ul className="navbar-nav mr-auto">
-                            <li className="navbar-item">
+                                <li className="navbar-item">
                                     <Link to="/home" className="nav-link">
-                                        <b>HOME</b>
+                                        HOME
                                     </Link>
                                 </li>
 
                                 <li className="navbar-item">
                                     <Link to="/services" className="nav-link">
-                                        <b>SERVICES</b>
+                                        SERVICES
                                     </Link>
                                 </li>
 
                                 <li className="navbar-item">
                                     <Link to="/expect" className="nav-link">
-                                        <b>WHAT TO EXPECT</b>
+                                        WHAT TO EXPECT
                                     </Link>
                                 </li>
 
 
                                 <li className="navbar-item">
                                     <Link to="/staff" className="nav-link">
-                                        <b>MEET THE STAFF</b>
+                                        MEET THE STAFF
                                     </Link>
                                 </li>
 
 
                                 <li className="navbar-item">
                                     <Link to="/contact" className="nav-link">
-                                        <b>CONTACT US</b>
+                                        CONTACT US
                                     </Link>
                                 </li>
                             </ul>
