@@ -9,14 +9,15 @@ class Expect extends Component {
                 <header className="jumbotron"
                     style={{
                         color: "",
+                        backgroundColor: "rgb(140, 114, 114, .2)",
                         backgroundPosition: "center",
                         backgroundSize: "cover",
                         minHeight: 300,
                         padding: 0,
                     }}>
-                        <div className="container">
+                    <div className="container">
                         <h1>What To Expect Page</h1>
-                        </div>
+                    </div>
                 </header>
                 <br />
 
@@ -29,16 +30,16 @@ class Expect extends Component {
                     <div className="row">
                         <div className="col-3">
                             <img
-                                className="happy-male"
-                                src="/images/Happy-Male.png"
-                                alt="happy-male"
+                                className="happy"
+                                src="/images/Happy-Female.png"
+                                alt="happy"
                             />
                         </div>
 
                         <div className="col-9">
                             <div className="jumbotron"
                                 style={{
-                                    backgroundColor: "",
+                                    backgroundColor: "rgb(140, 114, 114, .2)",
                                 }}>
                                 <b>WHAT IS TESTOSTERONE?</b>
                                 <br />
@@ -52,7 +53,10 @@ class Expect extends Component {
 
                     <div className="row">
                         <div className="col-9">
-                            <div className="jumbotron">
+                            <div className="jumbotron"
+                                style={{
+                                    backgroundColor: "rgb(140, 114, 114, .2)",
+                                }}>
                                 <b>WHAT TO EXPECT.</b>
                                 <br />
                                 <br />
@@ -62,9 +66,9 @@ class Expect extends Component {
                         </div>
                         <div className="col-3">
                             <img
-                                className="happy-male"
+                                className="happy"
                                 src="/images/Happy-Male.png"
-                                alt="happy-male"
+                                alt="happy"
                             />
                         </div>
                     </div>

@@ -9,14 +9,14 @@ class Contact extends Component {
         return (
             <div>
                 <br />
-                <div className="container"
+                <header className="container"
                     style={{
                         backgroundColor: "white",
                         borderBottom: "1px solid rgb(230, 230, 230)"
                     }}
                 >
                     <h3>CONTACT US | SHORE PARKWAY WELLNESS OF BROOKLYN</h3>
-                </div>
+                </header>
                 <br />
                 <br />
 

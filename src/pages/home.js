@@ -7,7 +7,7 @@ class Home extends Component {
     render() {
         return (
             <div>
-                <div className="jumbotron"
+                <header className="jumbotron"
                     style={{
                         color: "white",
                         backgroundPosition: "center",
@@ -36,7 +36,7 @@ class Home extends Component {
                         </table>
                     </div>
                     <br />
-                </div>
+                </header>
 
                 <div className="jumbotron"
                     style={{

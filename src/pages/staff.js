@@ -10,6 +10,7 @@ class Staff extends Component {
             <div>
                 <header className="jumbotron"
                     style={{
+                        backgroundColor: "rgb(140, 114, 114, .2)",
                         color: "",
                         backgroundPosition: "center",
                         backgroundSize: "cover",
