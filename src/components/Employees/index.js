@@ -5,14 +5,7 @@ class Employees extends Component {
     render() {
         return (
             <div>
-                {/* Header */}
-                <header className="jumbotron">
-                    <div className="container">
-                        <h1>Meet the Team</h1>
-                    </div>
-                </header>
                 <br />
-
                 <div className="container">
                     <div className="row">
                         {/* Team Member */}

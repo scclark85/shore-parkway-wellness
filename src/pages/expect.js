@@ -6,15 +6,18 @@ class Expect extends Component {
     render() {
         return (
             <div>
-                <div className="jumbotron"
+                <header className="jumbotron"
                     style={{
-                        color: "white",
+                        color: "",
                         backgroundPosition: "center",
                         backgroundSize: "cover",
                         minHeight: 300,
                         padding: 0,
                     }}>
-                </div>
+                        <div className="container">
+                        <h1>What To Expect Page</h1>
+                        </div>
+                </header>
                 <br />
 
                 <div className="container"
