@@ -3,3 +3,9 @@
 .jumbotron {
     border-radius: 0 !important;
 }
+
+/* expect page */
+.happy-male{
+    height: 265px;
+    padding: 0;
+}

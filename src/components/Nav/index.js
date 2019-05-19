@@ -72,19 +72,18 @@ class Nav extends Component {
                                         HOME
                                     </Link>
                                 </li>
-
-                                <li className="navbar-item">
-                                    <Link to="/services" className="nav-link">
-                                        SERVICES
-                                    </Link>
-                                </li>
-
+                                
                                 <li className="navbar-item">
                                     <Link to="/expect" className="nav-link">
                                         WHAT TO EXPECT
                                     </Link>
                                 </li>
 
+                                <li className="navbar-item">
+                                    <Link to="/services" className="nav-link">
+                                        SERVICES
+                                    </Link>
+                                </li>
 
                                 <li className="navbar-item">
                                     <Link to="/staff" className="nav-link">

@@ -7,6 +7,18 @@
     background-color: #4D1818; 
 }
 
+.footer-phone{
+    color: white !important;
+}
+
+.footer-email{
+    color: white !important;
+}
+
 .footer-copyright{
     background-color: #4D1818; 
+}
+
+.footer-link{
+    color: white !important;
 }

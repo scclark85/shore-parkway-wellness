@@ -15,19 +15,19 @@ const Footer = () => {
 
                             <ul>
                                 <li className="list-unstyled">
-                                    <a href="tel:+718-372-1031">
-                                        <b>P: 718.372.1031</b>
-                                    </a>
+                                    <b><p>P: <a className="footer-phone" href="tel:+718-372-1031">
+                                        718.372.1031
+                                    </a></p></b>
                                 </li>
 
                                 <li className="list-unstyled">
-                                    <a href="mailto:shoreparkwaywellness@gmail.com">
-                                        <b>E: shoreparkwaywellness@gmail.com</b>
-                                    </a>
+                                    <b><p>E: <a className="footer-email" href="mailto:shoreparkwaywellness@gmail.com">
+                                        shoreparkwaywellness@gmail.com
+                                    </a></p></b>
                                 </li>
 
                                 <li className="list-unstyled">
-                                    <span class="map-link">
+                                    <span className="map-link">
                                         <b>A: 1736 Shore Pkwy, Brooklyn, NY 11214</b>
                                     </span>
                                 </li>
@@ -60,7 +60,7 @@ const Footer = () => {
             <div className="footer-copyright py-3">
                 <MDBContainer fluid>
                     <div className="container">
-                        &copy; {new Date().getFullYear()}<a href="https://www.shoreparkwaywellness.com/"> Shore Parkway Wellness</a>
+                        &copy; {new Date().getFullYear()}<a className="footer-link" href="https://www.shoreparkwaywellness.com/"> Shore Parkway Wellness</a>
                     </div>
                 </MDBContainer>
             </div>
