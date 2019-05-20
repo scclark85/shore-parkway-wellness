@@ -7,3 +7,8 @@ Web application being made for a doctor in Brooklyn.  Clients will be able to se
 Login for clients for easier access of records.
 
 ## Bootstrap, React, JavaScript, Axios, Express, Node, Nodemailer
+
+### `yarn start`
+
+Runs the app in the development mode.<br>
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
