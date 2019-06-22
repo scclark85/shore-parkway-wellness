@@ -13,7 +13,7 @@ class Main extends Component {
                                 style={{
                                     textAlign: "",
                                     fontFamily: 'Mitr, sans-serif',
-                                    fontSize: "50px"
+                                    fontSize: "200%"
                                 }}>
                                 <b>YOUR TESTOSTERONE AND HORMONE REPLACEMENT SPECIALISTS</b>
                             </div>
@@ -23,7 +23,7 @@ class Main extends Component {
                 <br />
                 <br />
 
-                <div className="container jumbotron"
+                <div className="container jumbotron" id="about"
                     style={{
                         fontFamily: 'Mitr, sans-serif',
                         backgroundColor: "rgb(140, 114, 114, .2)"
@@ -35,7 +35,7 @@ class Main extends Component {
 
                     <p>At Shore Parkway Wellness, we specialize in a customized treatment plan for each of our patients.  We are dedicated to help you achieve your wellness objectives.  We also specialize in prescribing a natural hormone replacement for both men and women.  Our focus is to keep people well, rather than on a diseased based medicine.</p>
 
-                    <p><i>Your hormone response is as unique as your fingerprints</i> and one size does not fit all.  Customized Therapy is more effective.</p>
+                    <p><i>Your hormone response is as unique as your fingerprints</i> and one size does not fit all.  Customized therapy is more effective.</p>
                     <br />
 
                     <div className="text-center">

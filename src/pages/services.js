@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Product from "../components/Product";
 import "./style.css"
 
 class Services extends Component {
@@ -6,20 +7,17 @@ class Services extends Component {
     render() {
         return (
             <div>
-                <header className="jumbotron"
-                    style={{
-                        color: "",
-                        backgroundColor: "rgb(140, 114, 114, .2)",
-                        backgroundPosition: "center",
-                        backgroundSize: "cover",
-                        minHeight: 300,
-                        padding: 0,
-                    }}>
+                <header>
                     <div className="container">
                         <h1>Services Page</h1>
                     </div>
                 </header>
                 <br />
+
+                <div className="container">
+                    <Product />
+
+                </div>
             </div>
         )
     }

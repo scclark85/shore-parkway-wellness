@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import { Link } from "react-router-dom";
-import { Button } from 'react-bootstrap';
+import { Link, NavLink } from "react-router-dom";
 import "./style.css"
 
 class Nav extends Component {
+
     render() {
         return (
             <div className="header-top-nav">
@@ -17,34 +17,20 @@ class Nav extends Component {
                             />
                         </Link>
 
-                        <div>
-                            <Link to="/contact">
-                                <Button
-                                    className="navbar-btn"
-                                    variant="outline-dark"
-                                >
-                                    <b>
-                                        CONTACT US
-                            </b>
-                                </Button>
-                            </Link>
+                        <div className="operation">
+                            <p className="navbar-hours">
+                                <b>Mon-Sat 9am-7pm</b>
+                            </p>
 
-                            <div>
-                                <h6 className="navbar-hours">
-                                    <b>Mon-Sat 9am-7pm</b>
-                                </h6>
-                            </div>
+                            <p className="navbar-street">
+                                1736 Shore Pkwy
+                            </p>
 
-                            <div>
-                                <h6 className="navbar-street">
-                                    1736 Shore Pkwy
-                            </h6>
-
-                                <h6 className="navbar-city">
-                                    Brooklyn, NY 11214
-                            </h6>
-                            </div>
+                            <p className="navbar-city">
+                                Brooklyn, NY 11214
+                            </p>
                         </div>
+
                     </div>
                 </div>
 
@@ -68,34 +54,34 @@ class Nav extends Component {
 
                             <ul className="navbar-nav mr-auto">
                                 <li className="navbar-item">
-                                    <Link to="/home" className="nav-link">
+                                    <NavLink to="/home" className="nav-link">
                                         HOME
-                                    </Link>
+                                    </NavLink>
                                 </li>
-                                
+
                                 <li className="navbar-item">
-                                    <Link to="/expect" className="nav-link">
+                                    <NavLink to="/expect" className="nav-link" activeClassName="active">
                                         WHAT TO EXPECT
-                                    </Link>
+                                    </NavLink>
                                 </li>
 
                                 <li className="navbar-item">
-                                    <Link to="/services" className="nav-link">
+                                    <NavLink to="/services" className="nav-link" activeClassName="active">
                                         SERVICES
-                                    </Link>
+                                    </NavLink>
                                 </li>
 
-                                <li className="navbar-item">
-                                    <Link to="/staff" className="nav-link">
+                                {/* <li className="navbar-item">
+                                    <NavLink to="/staff" className="nav-link" activeClassName="active">
                                         MEET THE STAFF
-                                    </Link>
-                                </li>
+                                    </NavLink>
+                                </li> */}
 
 
                                 <li className="navbar-item">
-                                    <Link to="/contact" className="nav-link">
+                                    <NavLink to="/contact" className="nav-link" activeClassName="active">
                                         CONTACT US
-                                    </Link>
+                                    </NavLink>
                                 </li>
                             </ul>
 

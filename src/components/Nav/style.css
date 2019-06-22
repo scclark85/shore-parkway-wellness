@@ -1,57 +1,65 @@
 /* top white nav */
-.navbar-logo{
-    height: 100px;
-    width: 800px;
+.navbar-brand {
+margin-right: 0px;
+width: 60%;
 }
 
-#navbar-1{
+.navbar-logo {
+    width: 62%;
+}
+
+#navbar-1 {
     padding-top: 10px;
 }
 
-.navbar-btn{
-    /* color: #2F2F2F !important; */
-    font-size: 20px;
-}
-
-.navbar-hours{
-    padding-left: 15px;
+.navbar-hours {
+    padding-left: 0px;
     font-size: 15px;
 }
 
-.navbar-street{
-    padding-left: 33px;
-    font-size: 15px;
-}
-
-.navbar-city{
+.navbar-street {
     padding-left: 20px;
     font-size: 15px;
 }
 
+.navbar-city {
+    padding-left: 10px;
+    font-size: 15px;
+}
+
 /* middle opacity nav */
-#navbar-2{
+#navbar-2 {
     opacity: .4;
     background-color: #4D1818; 
     padding-top: 10px;
     padding-bottom: 10px; 
 }
 
-.navbar-phone{
+.navbar-phone{ 
     color: white !important;
     font-size: 26px;
 }
 
 /* bottom full color nav */
-#navbar-3{
+#navbar-3 {
     background-color: #4D1818; 
     padding-top: 10px;
     padding-bottom: 10px; 
 }
 
-.nav-link{
+.nav-link {
     color: white !important;
 }
 
-ul{
+.navbar-street {
+line-height: 0 !important;
+}
+
+.active, .nav-link:hover {
+    background-color: white;
+    color: black !important;
+  }
+
+ul {
     padding-left: 0px !important;
 }

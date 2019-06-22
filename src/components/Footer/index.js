@@ -10,7 +10,7 @@ const Footer = () => {
                     <br />
 
                     <MDBRow>
-                        <MDBCol md="6">
+                        <MDBCol md="5">
                             <h6 className="title"><b>OUR INFORMATION:</b></h6>
 
                             <ul>
@@ -35,8 +35,8 @@ const Footer = () => {
                             </ul>
                         </MDBCol>
 
-                        <MDBCol md="6">
-                            <h6 className="title"><b>HOURS:</b></h6>
+                        <MDBCol md="5">
+                            <h6 className="title"><b>HOURS OF OPERATION:</b></h6>
 
                             <ul>
                                 <li className="list-unstyled">
@@ -52,6 +52,37 @@ const Footer = () => {
                                 </li>
 
                             </ul>
+                        </MDBCol>
+
+                        <MDBCol md="2">
+                            <div className="social">
+                                <p>
+                                    <b>SOCIAL MEDIA:</b>
+                                </p>
+                                <a className="fab fa-2x fa-instagram"
+                                    href={
+                                        "https://www.instagram.com/shoreparkwaywellness/"
+                                    }
+                                    target="_blank"
+                                    rel="noopener noreferrer">
+                                </a>
+
+                                <a className="fab fa-2x fa-twitter-square"
+                                    href={
+                                        "https://twitter.com/wellnessshore?lang=en"
+                                    }
+                                    target="_blank"
+                                    rel="noopener noreferrer">
+                                </a>
+
+                                <a className="fab fa-2x fa-facebook-square"
+                                    href={
+                                        "https://www.facebook.com/pages/Shore-Parkway-Medical-Wellness/1626806260939644"
+                                    }
+                                    target="_blank"
+                                    rel="noopener noreferrer">
+                                </a>
+                            </div>
                         </MDBCol>
                     </MDBRow>
                 </div>

@@ -10,7 +10,7 @@ class ExpectCont extends Component {
                     fontFamily: 'Mitr, sans-serif',
                 }}>
 
-                <div className="row"
+                <div className="row jumbotron" id="what"
                     style={{
                         backgroundColor: "rgb(140, 114, 114, .2)",
                     }}>
@@ -36,7 +36,7 @@ class ExpectCont extends Component {
                 <br />
 
 
-                <div className="row"
+                <div className="row jumbotron" id="what"
                     style={{
                         backgroundColor: "rgb(140, 114, 114, .2)",
                     }}>
