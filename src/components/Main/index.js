@@ -33,7 +33,7 @@ class Main extends Component {
                     </div>
                     <br />
 
-                    <p>At Shore Parkway Wellness, we specialize in a customized treatment plan for each of our patients.  We are dedicated to help you achieve your wellness objectives.  We also specialize in prescribing a natural hormone replacement for both men and women.  Our focus is to keep people well, rather than on a diseased based medicine.</p>
+                    <p>At Shore Parkway Wellness, we specialize in a customized treatment plan for each of our patients.  We are dedicated to help you achieve your wellness objectives, and specialize in prescribing a natural hormone replacement for both men and women.  Our focus is to keep people well, rather than on a diseased based medicine.</p>
 
                     <p><i>Your hormone response is as unique as your fingerprints</i> and one size does not fit all.  Customized therapy is more effective.</p>
                     <br />
@@ -44,25 +44,22 @@ class Main extends Component {
                     <br />
 
                     <div className="row">
-                        <div className="col-4">
-                            <ul>
+                            <ul className="benefits" type="square">
                                 <li>More energy</li>
                                 <li>Increased sex drive</li>
                                 <li>Stronger, more frequent errections</li>
                                 <li>Better mood</li>
                                 <li>Decreased body fat</li>
                             </ul>
-                        </div>
 
-                        <div className="col-4">
-                            <ul>
+                            <ul className="benefits" type="square">
                                 <li>Improved muscle mass and strength</li>
                                 <li>Improved bone density</li>
                                 <li>Improved memory and concentration</li>
                                 <li>Feel like yourself again!</li>
                             </ul>
-                        </div>
                     </div>
+                    <br />
 
                     <p className="text-center"><b>Call today to schedule your first evaluation!</b></p>
 

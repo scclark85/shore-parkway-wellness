@@ -1,5 +1,5 @@
 .masthead {
-    height: 70vh;
+    height: 60vh;
     background-image: url("/images/couple-date-lens-flare-40525.jpg");
     color: white;
     background-size: cover;
@@ -9,4 +9,9 @@
 
   #about {
     box-shadow: 5px 5px 5px rgb(197, 197, 197);
+  }
+
+  .benefits { 
+    display: table; 
+    margin: 0 auto;
   }

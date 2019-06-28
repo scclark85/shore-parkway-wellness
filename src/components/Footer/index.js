@@ -15,8 +15,8 @@ const Footer = () => {
 
                             <ul>
                                 <li className="list-unstyled">
-                                    <b><p>P: <a className="footer-phone" href="tel:+718-372-1031">
-                                        718.372.1031
+                                    <b><p>P: <a className="footer-phone" href="tel:(718)372-1031">
+                                    718.372.1031
                                     </a></p></b>
                                 </li>
 
@@ -90,7 +90,7 @@ const Footer = () => {
 
             <div className="footer-copyright py-3">
                 <MDBContainer fluid>
-                    <div className="container">
+                    <div className="container text-center">
                         &copy; {new Date().getFullYear()}<a className="footer-link" href="https://www.shoreparkwaywellness.com/"> Shore Parkway Wellness</a>
                     </div>
                 </MDBContainer>

@@ -1,23 +1,21 @@
 import React, { Component } from 'react';
 import Product from "../components/Product";
+import Float from "../components/Float";
 import "./style.css"
 
 class Services extends Component {
 
     render() {
         return (
-            <div>
+            <div className="container">
+                <Float />
                 <header>
-                    <div className="container">
-                        <h1>Services Page</h1>
-                    </div>
+                    <br />
+                        <p className="services">Services Available</p>
                 </header>
                 <br />
 
-                <div className="container">
                     <Product />
-
-                </div>
             </div>
         )
     }

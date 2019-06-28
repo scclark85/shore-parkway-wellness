@@ -38,7 +38,7 @@ class Nav extends Component {
                     <div className="collpase navbar-collapse">
                         <div className="container">
                             <div className="navbar-nav d-flex justify-content-end">
-                                <a href="tel:+718-372-1031" className="navbar-phone">
+                                <a href="tel:(718)372-1031" className="navbar-phone">
                                     <b>
                                         718.372.1031
                             </b>
