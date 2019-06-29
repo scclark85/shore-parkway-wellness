@@ -1,60 +1,125 @@
 import React, { Component } from 'react';
-import { Form, Col, Button } from 'react-bootstrap';
+import { Button, Form, FormGroup, Label, Input, Col, Row } from 'reactstrap';
+import axios from "axios";
 
 class ContactForm extends Component {
+    constructor(props) {
+        super(props);
+        this.state = { name: '', email: '', phone: '', zip: '', select: '', message: '' };
+
+        this.handleChange = this.handleChange.bind(this)
+        this.handleSubmit = this.handleSubmit.bind(this)
+        this.formRef = null;
+    }
+
+    handleChange = e => {
+        this.setState({ [e.target.name]: e.target.value })
+
+    }
+
+    async handleSubmit(e) {
+        e.preventDefault()
+
+        const { name, email, phone, zip, select, message } = this.state
+
+        const form = await axios.post("api/form", {
+            name,
+            email,
+            phone,
+            zip,
+            select, 
+            message
+        })
+        console.log(form)
+    }
+
     render() {
         return (
             <div className="container">
-                <Form>
-                    <Form.Group controlId="formName" value="required">
-                        <Form.Row>
+                <Form onSubmit={this.handleSubmit}>
+
+                    <FormGroup>
+                        <Row>
                             <Col>
-                                <Form.Label>First Name</Form.Label>
-                                <Form.Control />
+                                <Label for="firstname"> First Name</Label>
+                                <Input
+                                    type="text"
+                                    name="name"
+                                    onChange={this.handleChange}
+                                    placeholder="Jane"
+                                    value={this.state.name} required />
                             </Col>
                             <Col>
-                                <Form.Label>Last Name</Form.Label>
-                                <Form.Control />
+                                <Label for="lastame">Last Name</Label>
+                                <Input
+                                    type="text"
+                                    name="name"
+                                    onChange={this.handleChange}
+                                    placeholder="Smith"
+                                    value={this.state.name} required />
                             </Col>
-                        </Form.Row>
-                    </Form.Group>
+                        </Row>
+                    </FormGroup>
 
-                    <Form.Group controlId="fromEmail">
-                        <Form.Label>Email Address</Form.Label>
-                        <Form.Control type="email" placeholder="name@example.com" />
-                    </Form.Group>
+                    <FormGroup>
+                        <Label for="email">Email:</Label>
+                        <Input
+                            type="email"
+                            name="email"
+                            onChange={this.handleChange}
+                            placeholder="random@random.com"
+                            value={this.state.email} required />
+                    </FormGroup>
 
-                    <Form.Group controlId="fromPhone">
-                        <Form.Label>Phone Number</Form.Label>
-                        <Form.Control type="phone" placeholder="000.000.0000" />
-                    </Form.Group>
+                    <FormGroup>
+                        <Label for="phone">Phone:</Label>
+                        <Input
+                            type="phone"
+                            name="phone"
+                            onChange={this.handleChange}
+                            placeholder="(123)456-0000"
+                            value={this.state.phone}
+                            required />
+                    </FormGroup>
 
-                    <Form.Group controlId="fromPhone">
-                        <Form.Label>Zip Code</Form.Label>
-                        <Form.Control type="phone" />
-                    </Form.Group>
+                    <FormGroup>
+                        <Label for="zip">Zip Code:</Label>
+                        <Input
+                            type="zip"
+                            name="zip"
+                            value={this.state.zip}
+                            placeholder="11214"
+                            onChange={this.handleChange}
+                            required />
+                    </FormGroup>
 
-                    <Form.Group controlId="fromReferralType">
-                        <Form.Label>How Did You Hear About Us?</Form.Label>
-                        <Form.Control as="select">
+                    <FormGroup>
+                        <Label for="referraltype">How Did You Hear About Us?</Label>
+                        <Input type="select" name="select" id="formSelect" required>
+                            <option></option>
                             <option>Another Client</option>
                             <option>Digital / Internet</option>
                             <option>Drive By / Building Signage</option>
                             <option>Employee / Owner</option>
                             <option>Other</option>
                             <option>Print Advertisment</option>
-                        </Form.Control>
-                    </Form.Group>
+                        </Input>
+                    </FormGroup>
 
-                    <Form.Group controlId="exampleForm.ControlTextarea1">
-                        <Form.Label>Message</Form.Label>
-                        <Form.Control as="textarea" rows="3" />
-                    </Form.Group>
-                </Form>
+                    <FormGroup>
+                        <Label for="message">Message:</Label>
+                        <Input
+                            type="textarea"
+                            name="message"
+                            placeholder="Leave us a message..."
+                            onChange={this.handleChange} />
+                    </FormGroup>
 
-                <Button type="submit" variant="dark" className="FormBtn" size="lg">
-                    Submit
+                    <Button variant="dark" className="FormBtn" size="lg">
+                        Submit
                     </Button>
+
+                </Form>
             </div>
 
         )
