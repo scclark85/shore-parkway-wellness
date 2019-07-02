@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import { Button, Form, FormGroup, Label, Input, Col, Row } from 'reactstrap';
+import { Button, Form, FormGroup, Label, Input } from 'reactstrap';
 import axios from "axios";
 
 class ContactForm extends Component {
     constructor(props) {
         super(props);
-        this.state = { name: '', email: '', phone: '', zip: '', select: '', message: '' };
+        this.state = { name: '', email: '', phone: '', zip: '', select: [], message: '' };
 
         this.handleChange = this.handleChange.bind(this)
         this.handleSubmit = this.handleSubmit.bind(this)
@@ -27,10 +27,9 @@ class ContactForm extends Component {
             email,
             phone,
             zip,
-            select, 
+            select,
             message
         })
-        console.log(form)
     }
 
     render() {
@@ -39,26 +38,13 @@ class ContactForm extends Component {
                 <Form onSubmit={this.handleSubmit}>
 
                     <FormGroup>
-                        <Row>
-                            <Col>
-                                <Label for="firstname"> First Name</Label>
-                                <Input
-                                    type="text"
-                                    name="name"
-                                    onChange={this.handleChange}
-                                    placeholder="Jane"
-                                    value={this.state.name} required />
-                            </Col>
-                            <Col>
-                                <Label for="lastame">Last Name</Label>
-                                <Input
-                                    type="text"
-                                    name="name"
-                                    onChange={this.handleChange}
-                                    placeholder="Smith"
-                                    value={this.state.name} required />
-                            </Col>
-                        </Row>
+                        <Label for="fullname"> Full Name</Label>
+                        <Input
+                            type="text"
+                            name="name"
+                            onChange={this.handleChange}
+                            placeholder="John Smith"
+                            value={this.state.name} required />
                     </FormGroup>
 
                     <FormGroup>
@@ -95,7 +81,14 @@ class ContactForm extends Component {
 
                     <FormGroup>
                         <Label for="referraltype">How Did You Hear About Us?</Label>
-                        <Input type="select" name="select" id="formSelect" required>
+                        <br />
+                        
+                        <select
+                            type="select"
+                            name="select"
+                            id="formSelect"
+                            onChange={this.handleChange}
+                            required>
                             <option></option>
                             <option>Another Client</option>
                             <option>Digital / Internet</option>
@@ -103,7 +96,7 @@ class ContactForm extends Component {
                             <option>Employee / Owner</option>
                             <option>Other</option>
                             <option>Print Advertisment</option>
-                        </Input>
+                        </select>
                     </FormGroup>
 
                     <FormGroup>

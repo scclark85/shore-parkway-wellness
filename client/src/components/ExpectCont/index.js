@@ -17,7 +17,7 @@ class ExpectCont extends Component {
                     <div className="col-3">
                         <img
                             className="happy"
-                            src="/public/images/Happy-Female.png"
+                            src="/images/Happy-Female.png"
                             alt="happy"
                         />
                     </div>
@@ -54,7 +54,7 @@ class ExpectCont extends Component {
                     <div className="col-3">
                         <img
                             className="happy"
-                            src="/public/images/Happy-Male.png"
+                            src="/images/Happy-Male.png"
                             alt="happy"
                         />
                     </div>

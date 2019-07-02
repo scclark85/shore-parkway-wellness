@@ -12,7 +12,7 @@ class Nav extends Component {
                         <Link to="/" className="navbar-brand">
                             <img
                                 className="navbar-logo"
-                                src="/public/images/Logo.png"
+                                src="/images/Logo.png"
                                 alt="nav_logo"
                             />
                         </Link>

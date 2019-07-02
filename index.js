@@ -23,6 +23,7 @@ app.post('/api/form', (req, res) => {
         <li>Email: ${req.body.email}</li>
         <li>Phone: ${req.body.phone}</li>
         <li>Zip: ${req.body.zip}</li>
+        <li>Referral: ${req.body.select}</li>
         </ul>
         <h3>Message</h3>
         <p>${req.body.message}</p>
