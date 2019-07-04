@@ -81,8 +81,7 @@ class ContactForm extends Component {
 
                     <FormGroup>
                         <Label for="referraltype">How Did You Hear About Us?</Label>
-                        <br />
-                        
+                        <br />      
                         <select
                             type="select"
                             name="select"

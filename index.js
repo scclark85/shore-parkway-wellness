@@ -9,8 +9,7 @@ const app = express();
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
-app.use(express.static('client/build')); 
-// app.use('/public', express.static('public'));
+app.use(express.static('build')); 
 
 app.post('/api/form', (req, res) => {
     console.log(req.body)
