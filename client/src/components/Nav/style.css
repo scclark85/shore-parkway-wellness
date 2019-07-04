@@ -43,8 +43,8 @@ width: 60%;
 /* bottom full color nav */
 #navbar-3 {
     background-color: #4D1818; 
-    padding-top: 10px;
-    padding-bottom: 10px; 
+    padding-top: 10px !important;
+    padding-bottom: 10px !important; 
 }
 
 .nav-link {

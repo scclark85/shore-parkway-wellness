@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Main from "../components/Main";
-import Map from ".././components/Map";
+import Map from "../components/Map";
 import "./style.css"
 
 class Home extends Component {

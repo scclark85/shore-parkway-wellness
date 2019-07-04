@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
-import { Link, NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
+import { Navbar, Nav } from 'react-bootstrap';
 import "./style.css"
 
-class Nav extends Component {
+class TopNav extends Component {
 
     render() {
         return (
@@ -48,51 +49,44 @@ class Nav extends Component {
                     </div>
                 </div>
 
-                <div className="navbar navbar-expand-lg" id="navbar-3">
-                    <div className="collpase navbar-collapse">
-                        <div className="container">
-
-                            <ul className="navbar-nav mr-auto">
+                <Navbar id="navbar-3" collapseOnSelect expand="lg">
+                    <div className="container">
+                        <Navbar.Toggle aria-controls="responsive-navbar-nav" id="toggle" />
+                        <Navbar.Collapse id="responsive-navbar-nav">
+                            <Nav className="navbar-nav mr-auto">
                                 <li className="navbar-item">
-                                    <NavLink to="/home" className="nav-link">
+                                    <Link to="/" className="nav-link">
                                         HOME
-                                    </NavLink>
+                                    </Link>
                                 </li>
 
                                 <li className="navbar-item">
-                                    <NavLink to="/expect" className="nav-link" activeClassName="active">
+                                    <Link to="/expect" className="nav-link" activeClassName="active">
                                         WHAT TO EXPECT
-                                    </NavLink>
+                                    </Link>
                                 </li>
 
                                 <li className="navbar-item">
-                                    <NavLink to="/services" className="nav-link" activeClassName="active">
+                                    <Link to="/services" className="nav-link" activeClassName="active">
                                         SERVICES
-                                    </NavLink>
+                                    </Link>
                                 </li>
-
-                                {/* <li className="navbar-item">
-                                    <NavLink to="/staff" className="nav-link" activeClassName="active">
-                                        MEET THE STAFF
-                                    </NavLink>
-                                </li> */}
-
 
                                 <li className="navbar-item">
-                                    <NavLink to="/contact" className="nav-link" activeClassName="active">
+                                    <Link to="/contact" className="nav-link" activeClassName="active">
                                         CONTACT US
-                                    </NavLink>
+                                    </Link>
                                 </li>
-                            </ul>
-
-                        </div>
+                            </Nav>
+                        </Navbar.Collapse>
                     </div>
-                </div>
+                </Navbar>
+
             </div>
         )
     }
 }
 
-export default Nav
+export default TopNav
 
 

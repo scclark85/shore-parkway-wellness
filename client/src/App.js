@@ -1,30 +1,28 @@
-import React, { Component } from "react";
+import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-
-import Home from "./pages/home";
-import Services from "./pages/services";
-import Expect from "./pages/expect";
-import Contact from "./pages/contact";
-
+import Home from "./pages/Home";
+import Expect from "./pages/Expect";
+import Services from "./pages/Services";
+import Contact from "./pages/Contact";
 import Nav from "./components/Nav";
-import Footer from "./components/Footer"
+import Footer from "./components/Footer";
 
-class App extends Component {
-  render() {
-    return (
-      <Router>
+function App() {
+  return (
+    <Router>
+      <div>
         <Nav />
         <Switch>
           <Route exact path="/" component={Home} />
-          <Route exact path="/home" component={Home} />
-          <Route exact path="/services" component={Services} />
+          <Route exact path="/Home" component={Home} />
           <Route exact path="/expect" component={Expect} />
+          <Route exact path="/services" component={Services} />
           <Route exact path="/contact" component={Contact} />
         </Switch>
         <Footer />
-      </Router>
-    );
-  }
+      </div>
+    </Router>
+  );
 }
 
 export default App;

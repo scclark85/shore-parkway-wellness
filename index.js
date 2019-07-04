@@ -1,15 +1,16 @@
 require('dotenv').config()
-
+const path = require("path");
 const express = require('express');
 const bodyParser = require('body-parser');
 const nodemailer = require('nodemailer');
 const app = express();
+const PORT = process.env.PORT || 8080
 
 // body parser middleware
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
-app.use(express.static('client/build')); 
+app.use(express.static('client/build'));
 
 app.post('/api/form', (req, res) => {
     console.log(req.body)
@@ -29,7 +30,7 @@ app.post('/api/form', (req, res) => {
         `
 
         let transporter = nodemailer.createTransport({
-            service: "gmail", 
+            service: "gmail",
             // no port needed for gmail
             auth: {
                 user: process.env.NODEMAILER_ADDRESS,
@@ -55,7 +56,9 @@ app.post('/api/form', (req, res) => {
     });
 });
 
-const PORT = process.env.PORT || 8080
+app.get("*", function (req, res) {
+    res.sendFile(path.resolve(__dirname + "/client/build/index.html"));
+});
 
 app.listen(PORT, function () {
     console.log(`App listening on PORT ${PORT}`);
