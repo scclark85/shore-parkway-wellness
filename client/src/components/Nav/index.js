@@ -55,7 +55,7 @@ class TopNav extends Component {
                         <Navbar.Collapse id="responsive-navbar-nav">
                             <Nav className="navbar-nav mr-auto">
                                 <li className="navbar-item">
-                                    <Link to="/" className="nav-link">
+                                    <Link to="/home" className="nav-link">
                                         HOME
                                     </Link>
                                 </li>
