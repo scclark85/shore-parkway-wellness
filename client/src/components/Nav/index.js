@@ -61,19 +61,19 @@ class TopNav extends Component {
                                 </li>
 
                                 <li className="navbar-item">
-                                    <Link to="/expect" className="nav-link" activeClassName="active">
+                                    <Link to="/expect" className="nav-link" activeclassname="active">
                                         WHAT TO EXPECT
                                     </Link>
                                 </li>
 
                                 <li className="navbar-item">
-                                    <Link to="/services" className="nav-link" activeClassName="active">
+                                    <Link to="/services" className="nav-link" activeclassname="active">
                                         SERVICES
                                     </Link>
                                 </li>
 
                                 <li className="navbar-item">
-                                    <Link to="/contact" className="nav-link" activeClassName="active">
+                                    <Link to="/contact" className="nav-link" activeclassname="active">
                                         CONTACT US
                                     </Link>
                                 </li>
