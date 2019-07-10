@@ -19,8 +19,8 @@ class TopNav extends Component {
                         </Link>
 
                         <div className="operation">
-                            <p className="navbar-hours">
-                                <b>Mon-Sat 9am-7pm</b>
+                            <p className="navbar-location">
+                                <b>Located At:</b>
                             </p>
 
                             <p className="navbar-street">

@@ -12,19 +12,19 @@ width: 60%;
     padding-top: 10px;
 }
 
-.navbar-hours {
-    padding-left: 0px;
-    font-size: 15px;
+.navbar-location {
+    padding-left: 30px;
+    font-size: 20px;
 }
 
 .navbar-street {
-    padding-left: 20px;
-    font-size: 15px;
+    padding-left: 45px;
+    font-size: 11px;
 }
 
 .navbar-city {
-    padding-left: 10px;
-    font-size: 15px;
+    padding-left: 35px;
+    font-size: 11px;
 }
 
 /* middle opacity nav */
@@ -63,3 +63,86 @@ line-height: 0 !important;
 ul {
     padding-left: 0px !important;
 }
+
+@media only screen and (max-width: 1024px) {
+    .navbar-brand {
+        /* margin-right: 0px; */
+        width: 100%;
+        }
+
+    /* .navbar-location {
+        padding-left: 30px;
+        font-size: 20px;
+    }
+        
+    .navbar-street {
+        padding-left: 45px;
+        font-size: 11px;
+    }
+        
+    .navbar-city {
+        padding-left: 35px;
+        font-size: 11px;
+    }
+    
+    .navbar-phone{ 
+        font-size: 26px;
+    } */
+   
+    }
+
+@media only screen and (max-width: 900px) {
+    .navbar-brand {
+        margin-left: 100px !important;
+        width: 100% !important;
+    }
+
+    .navbar-location {
+        margin-left: 110px !important;
+        font-size: 15px !important;
+    }
+        
+    .navbar-street {
+        margin-left: 98px !important;
+        font-size: 9px !important;
+    }
+        
+    .navbar-city {
+        margin-left: 105px !important;
+        font-size: 9px !important;
+    }
+    
+    .navbar-phone {
+        margin-left: 118px !important;
+        font-size: 15px !important; 
+    }
+   
+    }
+
+    @media only screen and (max-width: 667px) {
+    .navbar-brand {
+        margin-left: 100px !important;
+        width: 100% !important;
+    }
+        
+    .navbar-location {
+        margin-left: 110px !important;
+        font-size: 15px !important;
+    }
+                
+    .navbar-street {
+        margin-left: 98px !important;
+        font-size: 9px !important;
+    }
+                
+    .navbar-city {
+        margin-left: 105px !important;
+        font-size: 9px !important;
+    }
+            
+    .navbar-phone {
+        margin-left: 118px !important;
+        font-size: 15px !important; 
+    }
+           
+    }

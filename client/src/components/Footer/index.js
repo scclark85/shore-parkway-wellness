@@ -41,13 +41,19 @@ const Footer = () => {
                             <ul>
                                 <li className="list-unstyled">
                                     <p>
-                                        <b>Sunday Closed</b>
+                                        <b>Tuesday 6am-2pm</b>
                                     </p>
                                 </li>
 
                                 <li className="list-unstyled">
                                     <p>
-                                        <b>Monday-Saturday 9AM-7PM</b>
+                                        <b>Thusday 4pm-8pm</b>
+                                    </p>
+                                </li>
+
+                                <li className="list-unstyled">
+                                    <p>
+                                        <b>Friday 6am-2pm</b>
                                     </p>
                                 </li>
 
