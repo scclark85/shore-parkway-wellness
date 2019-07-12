@@ -47,7 +47,7 @@ const Footer = () => {
 
                                 <li className="list-unstyled">
                                     <p>
-                                        <b>Thusday 4pm-8pm</b>
+                                        <b>Thursday 4pm-8pm</b>
                                     </p>
                                 </li>
 
