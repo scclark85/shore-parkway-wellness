@@ -14,6 +14,30 @@ class ExpectCont extends Component {
                     style={{
                         backgroundColor: "rgb(140, 114, 114, .2)",
                     }}>
+                    <div className="col-9">
+                        <br />
+                        <br />
+
+                        <b>WHAT TO EXPECT.</b>
+                        <br />
+                        <br />
+
+                        <p>Most men and women begin to lose testosterone during their early to mid-20's.  This begins the process of gradual physical, mental, and sexual deterioration which, if uncorrected progresses for the rest of our lives. We tend to attribute this to "getting older" when in fact it is a testosterone deficiency.</p>
+                    </div>
+
+                    <div className="col-3">
+                        <img
+                            className="happy"
+                            src="/images/Happy-Male.png"
+                            alt="happy"
+                        />
+                    </div>
+                </div>
+
+                <div className="row jumbotron" id="what"
+                    style={{
+                        backgroundColor: "rgb(140, 114, 114, .2)",
+                    }}>
                     <div className="col-3">
                         <img
                             className="happy"
@@ -36,29 +60,6 @@ class ExpectCont extends Component {
                 <br />
 
 
-                <div className="row jumbotron" id="what"
-                    style={{
-                        backgroundColor: "rgb(140, 114, 114, .2)",
-                    }}>
-                    <div className="col-9">
-                        <br />
-                        <br />
-
-                        <b>WHAT TO EXPECT.</b>
-                        <br />
-                        <br />
-
-                        <p>Most men and women begin to lose testosterone during their early to mid-20's/ This begins the process of gradual physical, mental, and sexual deterioration which, if uncorrected progresses for the rest of our lives. We tend to attribute this to "getting older" when in fact it is testosterone deficiency.</p>
-                    </div>
-
-                    <div className="col-3">
-                        <img
-                            className="happy"
-                            src="/images/Happy-Male.png"
-                            alt="happy"
-                        />
-                    </div>
-                </div>
             </div>
 
         )
