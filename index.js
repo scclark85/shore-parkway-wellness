@@ -56,11 +56,13 @@ app.post('/api/form', (req, res) => {
     });
 });
 
-app.use(require("./routes"));
-
-app.get("*", function (req, res) {
-    res.sendFile(path.resolve(__dirname + "/client/build/index.html"));
-});
+app.get('/*', function(req, res) {
+    res.sendFile(path.join(__dirname, 'client/build/index.html'), function(err) {
+      if (err) {
+        res.status(500).send(err)
+      }
+    })
+  })
 
 app.listen(PORT, function () {
     console.log(`App listening on PORT ${PORT}`);
