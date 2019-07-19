@@ -47,7 +47,7 @@ class ContactForm extends Component {
     render() {
         return (
             <div className="container">
-                <Form id="contact-form" onSubmit={this.handleSubmit}>
+                <Form id="contact-form" onSubmit={this.handleSubmit} method="POST">
 
                     <FormGroup>
                         <Label for="fullname"> Full Name</Label>
