@@ -22,7 +22,7 @@ class ContactForm extends Component {
 
         const { name, email, phone, zip, select, message } = this.state
 
-        const form = await axios.post("api/form", {
+        const form = await axios.post("https://agile-citadel-20170.herokuapp.com/api/form", {
             name,
             email,
             phone,
