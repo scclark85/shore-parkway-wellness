@@ -30,12 +30,24 @@ class ContactForm extends Component {
             select,
             message
         })
+            .then((response) => {
+                if (response.data.msg === 'success') {
+                    alert("Message Sent.");
+                    this.resetForm()
+                } else if (response.data.msg === 'fail') {
+                    alert("Message failed to send.")
+                }
+            })
+    }
+
+    resetForm(){
+        document.getElementById('contact-form').reset();
     }
 
     render() {
         return (
             <div className="container">
-                <Form onSubmit={this.handleSubmit}>
+                <Form id="contact-form" onSubmit={this.handleSubmit}>
 
                     <FormGroup>
                         <Label for="fullname"> Full Name</Label>
@@ -81,7 +93,7 @@ class ContactForm extends Component {
 
                     <FormGroup>
                         <Label for="referraltype">How Did You Hear About Us?</Label>
-                        <br />      
+                        <br />
                         <select
                             type="select"
                             name="select"
