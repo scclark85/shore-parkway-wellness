@@ -6,5 +6,5 @@ Web application being made for a doctor in Brooklyn.  Clients will be able to se
 ## Future Development
 Login for clients for easier access of records.
 
-## Bootstrap, React, JavaScript, Axios, Express, Node, Nodemailer
+## Bootstrap, React, JavaScript, Node
 
