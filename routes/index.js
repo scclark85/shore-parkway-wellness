@@ -2,11 +2,11 @@ var express = require('express');
 var router = express.Router();
 var nodemailer = require('nodemailer');
 
-router.get("/", function(req, res) {
-    res.send("Welcome to Shore Parkway Wellness!");
+router.get("/contact", function(req, res) {
+    console.log(req.body)
   });
 
-router.post('/api/form', (req, res) => {
+router.post('https://agile-citadel-20170.herokuapp.com/api/form', (req, res) => {
     console.log(req.body)
 
     nodemailer.createTestAccount((err, account) => {
