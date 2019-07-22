@@ -54,7 +54,7 @@ class ContactForm extends Component {
                         <br />
                         <select
                             type="select"
-                            name="select"
+                            name="referral"
                             id="formSelect"
                             required>
                             <option></option>
