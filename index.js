@@ -12,7 +12,7 @@ app.use(bodyParser.json());
 
 app.use(express.static('client/build'));
 
-app.use(require("./routes"));
+//app.use(require("./routes"));
 
 app.get('*', function(req, res) {
     res.sendFile(path.join(__dirname, './client/build/index.html'), function(err) {

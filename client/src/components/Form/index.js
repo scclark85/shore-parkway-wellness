@@ -1,62 +1,25 @@
 import React, { Component } from 'react';
 import { Button, Form, FormGroup, Label, Input } from 'reactstrap';
-import axios from "axios";
+//import axios from "axios";
 
 class ContactForm extends Component {
-    constructor(props) {
-        super(props);
-        this.state = { name: '', email: '', phone: '', zip: '', select: [], message: '' };
 
-        this.handleChange = this.handleChange.bind(this)
-        this.handleSubmit = this.handleSubmit.bind(this)
-        this.formRef = null;
-    }
-
-    handleChange = e => {
-        this.setState({ [e.target.name]: e.target.value })
-
-    }
-
-    async handleSubmit(e) {
-        e.preventDefault()
-
-        const { name, email, phone, zip, select, message } = this.state
-
-        const form = await axios.post("/api/form", {
-            name,
-            email,
-            phone,
-            zip,
-            select,
-            message
-        })
-            .then((response) => {
-                if (response.data.msg === 'success') {
-                    alert("Message Sent.");
-                    this.resetForm()
-                } else if (response.data.msg === 'fail') {
-                    alert("Message failed to send.")
-                }
-            })
-    }
-
-    resetForm(){
+    resetForm() {
         document.getElementById('contact-form').reset();
     }
 
     render() {
         return (
             <div className="container">
-                <Form id="contact-form" onSubmit={this.handleSubmit} method="POST">
+                <Form id="contact-form" method="POST" action="https://formspree.io/sarahchristinec85@gmail.com">
 
                     <FormGroup>
                         <Label for="fullname"> Full Name</Label>
                         <Input
                             type="text"
                             name="name"
-                            onChange={this.handleChange}
                             placeholder="John Smith"
-                            value={this.state.name} required />
+                            required />
                     </FormGroup>
 
                     <FormGroup>
@@ -64,9 +27,8 @@ class ContactForm extends Component {
                         <Input
                             type="email"
                             name="email"
-                            onChange={this.handleChange}
                             placeholder="random@random.com"
-                            value={this.state.email} required />
+                            required />
                     </FormGroup>
 
                     <FormGroup>
@@ -74,9 +36,7 @@ class ContactForm extends Component {
                         <Input
                             type="phone"
                             name="phone"
-                            onChange={this.handleChange}
                             placeholder="(123)456-0000"
-                            value={this.state.phone}
                             required />
                     </FormGroup>
 
@@ -85,9 +45,7 @@ class ContactForm extends Component {
                         <Input
                             type="zip"
                             name="zip"
-                            value={this.state.zip}
                             placeholder="11214"
-                            onChange={this.handleChange}
                             required />
                     </FormGroup>
 
@@ -98,7 +56,6 @@ class ContactForm extends Component {
                             type="select"
                             name="select"
                             id="formSelect"
-                            onChange={this.handleChange}
                             required>
                             <option></option>
                             <option>Another Client</option>
@@ -115,13 +72,12 @@ class ContactForm extends Component {
                         <Input
                             type="textarea"
                             name="message"
-                            placeholder="Leave us a message..."
-                            onChange={this.handleChange} />
+                            placeholder="Leave us a message..." />
                     </FormGroup>
 
                     <Button variant="dark" className="FormBtn" size="lg">
                         Submit
-                    </Button>
+                        </Button>
 
                 </Form>
             </div>
