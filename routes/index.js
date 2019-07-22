@@ -2,6 +2,10 @@ var express = require('express');
 var router = express.Router();
 var nodemailer = require('nodemailer');
 
+router.get("/", function(req, res) {
+    res.send("Welcome to Shore Parkway Wellness!");
+  });
+
 router.post('/api/form', (req, res) => {
     console.log(req.body)
 

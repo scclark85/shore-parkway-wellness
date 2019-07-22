@@ -22,7 +22,7 @@ class ContactForm extends Component {
 
         const { name, email, phone, zip, select, message } = this.state
 
-        const form = await axios.post("http://localhost:8080/api/form", {
+        const form = await axios.post("/api/form", {
             name,
             email,
             phone,
