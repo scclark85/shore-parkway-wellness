@@ -88,6 +88,9 @@ class Product extends Component {
                     </div>
                 </div>
                 <br />
+
+                <p><i>***Most insurance plans accepted.***</i></p>
+                <br />
                 <br />
 
             </div>

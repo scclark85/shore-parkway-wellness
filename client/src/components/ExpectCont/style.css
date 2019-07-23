@@ -1,7 +1,12 @@
 #what {
     box-shadow: 5px 5px 5px rgb(197, 197, 197);
+    background-color: rgb(140, 114, 114, .2);
   }
 
-.happy{
-  width: 100%;
+#male {
+  width: 70%;
+}
+
+#female {
+  width: 75%;
 }

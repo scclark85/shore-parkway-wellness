@@ -44,24 +44,36 @@ class Main extends Component {
                     <br />
 
                     <div className="row">
-                            <ul className="benefits" type="square">
-                                <li>More energy</li>
-                                <li>Increased sex drive</li>
-                                <li>Stronger, more frequent errections</li>
-                                <li>Better mood</li>
-                                <li>Decreased body fat</li>
-                            </ul>
+                        <ul className="benefits" type="none">
+                            <li><span className="fa fa-check icon-success" id="check"></span> More energy</li>
+                            <br />
+                            <li><span className="fa fa-check icon-success" id="check"></span> Increased sex drive</li>
+                            <br />
+                            <li><span className="fa fa-check icon-success" id="check"></span> Stronger, more frequent errections</li>
+                            <br />
+                            <li><span className="fa fa-check icon-success" id="check"></span> Better mood</li>
+                            <br />
+                            <li><span className="fa fa-check icon-success" id="check"></span> Decreased body fat</li>
+                        </ul>
 
-                            <ul className="benefits" type="square">
-                                <li>Improved muscle mass and strength</li>
-                                <li>Improved bone density</li>
-                                <li>Improved memory and concentration</li>
-                                <li>Feel like yourself again!</li>
-                            </ul>
+                        <ul className="benefits" type="none">
+                            <li><span className="fa fa-check icon-success" id="check"></span> Improved muscle mass and strength</li>
+                            <br />
+                            <li><span className="fa fa-check icon-success" id="check"></span> Improved bone density</li>
+                            <br />
+                            <li><span className="fa fa-check icon-success" id="check"></span> Improved memory and concentration</li>
+                            <br />
+                            <li><span className="fa fa-check icon-success" id="check"></span> Feel like yourself again!</li>
+                        </ul>
                     </div>
                     <br />
 
-                    <p className="text-center"><b>Call today to schedule your first evaluation!</b></p>
+
+                    <p className="text-center">
+                        <a href="/expect" className="btn btn-secondary">Learn More Today <i className="fa fa-angle-right" id="next"></i></a>
+                    </p>
+                    <p className="text-center"><i>Most insurance plans accepted.</i></p>
+                    <br />
 
                 </div>
             </div >
