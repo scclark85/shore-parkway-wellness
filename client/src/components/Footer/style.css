@@ -27,3 +27,30 @@
     color: white !important;
     padding: 5px;
 }
+
+@media only screen and (max-width: 1024px) {
+.title{
+    font-size: 10px !important;
+}
+
+.footer-phone{
+    font-size: 10px !important;
+}
+    
+.footer-email{
+    font-size: 10px !important;
+}
+
+.list-unstyled{
+    font-size: 10px !important;
+}
+
+.map-link{
+    font-size: 10px;
+}
+
+.social{
+    font-size: 10px !important;
+}
+       
+}

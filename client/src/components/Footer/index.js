@@ -15,14 +15,14 @@ const Footer = () => {
 
                             <ul>
                                 <li className="list-unstyled">
-                                    <b><p>P: <a className="footer-phone" href="tel:(718)372-1031">
-                                    718.372.1031
+                                    <b><p><a className="footer-phone" href="tel:(718)372-1031">
+                                    P: 718.372.1031
                                     </a></p></b>
                                 </li>
 
                                 <li className="list-unstyled">
-                                    <b><p>E: <a className="footer-email" href="mailto:shoreparkwaywellness@gmail.com">
-                                        shoreparkwaywellness@gmail.com
+                                    <b><p><a className="footer-email" href="mailto:shoreparkwaywellness@gmail.com">
+                                    E: shoreparkwaywellness@gmail.com
                                     </a></p></b>
                                 </li>
 

@@ -64,61 +64,25 @@ ul {
     padding-left: 0px !important;
 }
 
-@media only screen and (max-width: 1024px) {
-    .navbar-brand {
-        /* margin-right: 0px; */
-        width: 100%;
-        }
-
-    /* .navbar-location {
-        padding-left: 30px;
-        font-size: 20px;
-    }
-        
-    .navbar-street {
-        padding-left: 45px;
-        font-size: 11px;
-    }
-        
-    .navbar-city {
-        padding-left: 35px;
-        font-size: 11px;
-    }
-    
-    .navbar-phone{ 
-        font-size: 26px;
-    } */
-   
-    }
-
-@media only screen and (max-width: 900px) {
-    .navbar-brand {
-        margin-left: 100px !important;
-        width: 100% !important;
-    }
-
+    /* @media only screen and (max-width: 736px) {
     .navbar-location {
-        margin-left: 110px !important;
+        padding-left: 30px !important;
         font-size: 15px !important;
     }
-        
+                
     .navbar-street {
-        margin-left: 98px !important;
+        padding-left: 45px !important;
         font-size: 9px !important;
     }
-        
+                    
     .navbar-city {
-        margin-left: 105px !important;
-        font-size: 9px !important;
+        padding-left: 35px !important;
+        font-size: 11px;
     }
+               
+    } */
     
-    .navbar-phone {
-        margin-left: 118px !important;
-        font-size: 15px !important; 
-    }
-   
-    }
-
+    
     @media only screen and (max-width: 667px) {
     .navbar-brand {
         margin-left: 100px !important;
@@ -145,4 +109,28 @@ ul {
         font-size: 15px !important; 
     }
            
+    }
+
+    @media only screen and (max-width: 400px) {
+    .navbar-location {
+        padding-left: 15px !important;
+        font-size: 10px !important;
+    }
+                
+    .navbar-street {
+        padding-left: 27px !important;
+        font-size: 7px !important;
+    }
+                    
+    .navbar-city {
+        padding-left: 18px !important;
+        font-size: 7px !important;
+    }
+
+    .navbar-phone {
+        padding-right: 0px !important;
+        margin-left: 90px !important;
+        font-size: 15px !important; 
+    }
+               
     }
