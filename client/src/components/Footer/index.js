@@ -83,7 +83,7 @@ const Footer = () => {
 
                                 <a className="fab fa-2x fa-facebook-square"
                                     href={
-                                        "https://www.facebook.com/pages/Shore-Parkway-Medical-Wellness/1626806260939644"
+                                        "https://www.facebook.com/SHORE-Parkway-Wellness-447660226039467/"
                                     }
                                     target="_blank"
                                     rel="noopener noreferrer">
