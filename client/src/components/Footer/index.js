@@ -97,7 +97,7 @@ const Footer = () => {
             <div className="footer-copyright py-3">
                 <MDBContainer fluid>
                     <div className="container text-center">
-                        &copy; {new Date().getFullYear()}<a className="footer-link" href="https://www.shoreparkwaywellness.com/"> Shore Parkway Wellness</a>
+                        &copy; {new Date().getFullYear()}<a className="footer-link" href="www.shoreparkwaywellness.com"> Shore Parkway Wellness</a>
                     </div>
                 </MDBContainer>
             </div>
